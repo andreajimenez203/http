@@ -15,7 +15,6 @@ class _MyAppState extends State<MyApp> {
 
   Future<List<Gif>> _getGifs() async {
     final response = await http.get(
-    Uri.parse('https://api.giphy.com/v1/gifs/trending?api_key=S2a9zt1K87kBuM1hVqvFX0oOeMN7QYiZ&limit=10&offset=0&rating=g&bundle=messaging_non_clips')
 );
 
     if (response.statusCode == 200) {
